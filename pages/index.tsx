@@ -5,6 +5,7 @@ import styles from "../styles/Home.module.css";
 const HOME_QUERY = gql`
   query HomeQuery {
     name
+    website
   }
 `;
 

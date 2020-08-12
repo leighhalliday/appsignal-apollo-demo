@@ -42,6 +42,7 @@ export interface NexusGenAllTypes extends NexusGenRootTypes {
 export interface NexusGenFieldTypes {
   Query: { // field return type
     name: string; // String!
+    website: string; // String!
   }
 }
 

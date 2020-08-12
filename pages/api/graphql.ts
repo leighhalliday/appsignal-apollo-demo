@@ -7,6 +7,7 @@ import path from "path";
 const Query = queryType({
   definition(t) {
     t.string("name", () => "Leigh Halliday");
+    t.string("website", () => "https://www.leighhalliday.com");
   },
 });
 
