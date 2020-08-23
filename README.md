@@ -13,7 +13,7 @@ High level outline of what I hope to cover
 
 ## Backend
 
-- Set up AppSignal instance in `appsignal.js`
+- Set up AppSignal instance in `src/appsignalServer.js`
 - Set up custom server in Next.js in `server.js`
 - Set up web vitals reporting in `pages/_app.tsx`
 
@@ -21,10 +21,12 @@ High level outline of what I hope to cover
 
 - Create `/api/graphql` endpoint with minimal apollo server setup
 - Add AppSignal monitoring to apollo server
--
+- Create simple client side apollo client in `src/apolloClient.ts`
 
 ## Frontend
 
-- Set up AppSignal instance in `src/appsignal.ts`
+- Set up AppSignal instance in `src/appsignalClient.ts`
 - Set up ErrorBoundary in `pages/_app.tsx`
-- Show caught vs uncaught error via button click in `pages/index.tsx`
+- Show caught error via button click in `pages/index.tsx`
+- Show error that gets caught in ErrorBoundary in `pages/boundary.tsx`
+- Configure source maps in Next.js in `next.config.js`
