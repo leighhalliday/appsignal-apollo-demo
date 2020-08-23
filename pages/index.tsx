@@ -1,6 +1,5 @@
-import Head from "next/head";
 import { useQuery, gql } from "@apollo/client";
-import { appsignal } from "src/appsignal";
+import { appsignal } from "src/appsignalClient";
 import styles from "../styles/Home.module.css";
 
 const HOME_QUERY = gql`
@@ -17,10 +16,6 @@ export default function Home() {
 
   return (
     <div className={styles.container}>
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
       <pre>{JSON.stringify(data)}</pre>
 
       <button
@@ -32,7 +27,15 @@ export default function Home() {
           }
         }}
       >
-        Create Error
+        Caught Error
+      </button>
+
+      <button
+        onClick={() => {
+          throw new Error("Uncaught");
+        }}
+      >
+        Uncaught Error
       </button>
     </div>
   );

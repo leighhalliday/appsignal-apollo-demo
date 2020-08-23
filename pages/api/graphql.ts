@@ -1,4 +1,4 @@
-import { appsignal } from "../../appsignal";
+import { appsignal } from "src/appsignalServer";
 import { createApolloPlugin } from "@appsignal/apollo-server";
 import { ApolloServer } from "apollo-server-micro";
 import { makeSchema, queryType } from "@nexus/schema";

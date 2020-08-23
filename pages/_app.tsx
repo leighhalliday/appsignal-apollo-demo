@@ -1,7 +1,7 @@
 import { ApolloProvider } from "@apollo/client";
-import { useApollo } from "src/apolloClient";
 import { ErrorBoundary } from "@appsignal/react";
-import { appsignal } from "src/appsignal";
+import { useApollo } from "src/apolloClient";
+import { appsignal } from "src/appsignalClient";
 import "../styles/globals.css";
 
 function MyApp({ Component, pageProps }) {
@@ -9,7 +9,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <ErrorBoundary
       instance={appsignal}
-      fallback={(error) => <span>boundary</span>}
+      fallback={(_error) => <span>boundary</span>}
     >
       <ApolloProvider client={client}>
         <Component {...pageProps} />

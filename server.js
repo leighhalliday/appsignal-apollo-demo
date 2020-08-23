@@ -1,4 +1,4 @@
-const { appsignal } = require("./appsignal");
+const { appsignal } = require("./src/appsignalServer");
 const {
   getRequestHandler,
   EXPERIMENTAL: { getWebVitalsHandler },
