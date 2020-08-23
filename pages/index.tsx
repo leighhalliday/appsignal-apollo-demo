@@ -29,14 +29,6 @@ export default function Home() {
       >
         Caught Error
       </button>
-
-      <button
-        onClick={() => {
-          throw new Error("Uncaught");
-        }}
-      >
-        Uncaught Error
-      </button>
     </div>
   );
 }
