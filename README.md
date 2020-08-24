@@ -9,7 +9,7 @@ A minimal repo to test out AppSignal with Next.js and Apollo.
 
 ## Outline
 
-High level outline of what I hope to cover
+High level outline of what I hope to cover.
 
 ## Backend
 
